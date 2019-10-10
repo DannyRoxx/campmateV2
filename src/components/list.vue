@@ -1,8 +1,10 @@
 <template>
     <div class="list">
+      <section class="input">
         <input class="inputArea" @keyup.enter="addTodo()" type="text" placeholder="Add item to list ..." v-model="todo.title">
         <!-- <input type="checkbox" v-model="todo.completed"> -->
         <button class="addBtn" @click="addTodo()">Add</button>
+      </section>
 
         <ul v-for="todo in todos" v-bind:key="todo.index">
             <label class="checkbox-label">

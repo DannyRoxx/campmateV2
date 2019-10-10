@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>CAMP MATE</h1>
+    <img src="../../img/logo1-512x512.png">
     <preset />
     <list />
   </div>
@@ -26,10 +26,10 @@ export default {
 
 <style>
   body {
-    background-image: url(../../img/background.jpeg);
+    background-image: url(../../img/forest.png);
     background-position: bottom;
     background-attachment: fixed;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
