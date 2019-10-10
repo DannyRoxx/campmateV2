@@ -27,7 +27,8 @@ export default {
 <style>
   body {
     background-image: url(../../img/background.jpeg);
-    background-position: center;
+    background-position: bottom;
+    background-attachment: fixed;
     background-size: auto;
     background-repeat: no-repeat;
     margin: 0;
@@ -42,10 +43,19 @@ export default {
     background-color: #232422;
   }
 
+  img {
+    height: 15em;
+  }
+
   .preset-menu {
-    margin: 1% 5%;
     text-align: left;
-    color: #f7f7f7;
+    color: white;
+    max-width: 700px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    margin-top: -3em;
   }
 
   .presets {
@@ -64,9 +74,10 @@ export default {
   }
 
   .preset {
-    background-color: #f7f7f7;
+    background-color: #cfcfcf;
     padding: 8% 0;
     cursor: pointer;
+    border-radius: 5px;
   }
 
   p img {

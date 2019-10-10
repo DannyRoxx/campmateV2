@@ -17,39 +17,52 @@
 
 <style>
 .list {
-  margin: 5% 5%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #cfcfcf;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: 70% 28%;
+  grid-column-gap: 2%;
 }
 
 .inputArea {
-    width: 70%;
-    border: 2px solid black;
-    padding: 1%;
+    border: none;
+    padding: 2%;
     font-size: 1.3rem;
+    border-radius: 5px;
 }
 
 .addBtn {
-    width: 30%;
-    border: 2px solid #232422;
-    background-color: #bbb;
-    padding: 1%;
+    background-color:white;
+    padding: 2%;
     font-size: 1.3rem;
     cursor: pointer;
+    border-radius: 5px;
+    border: none;
 }
 
 .addBtn:hover {
-  background-color: #aaa;
+  background-color: dimgrey;
 }
 
 ul {
     list-style-type: none;
-    background-color: #f7f7f7;
-    padding: 1%;
+    background-color: white;
+    padding: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
     display: grid;
-    grid-template-columns: 10% 85% 5%;
+    grid-template-columns: 3em auto 1.5em;
     text-align: left;
     font-size: 1.2rem;
+    border-radius: 5px;
 }
 
 .listItem {
@@ -81,25 +94,23 @@ ul {
     left: 0px;
     height: 24px;
     width: 24px;
-    background-color: transparent;
+    background-color:#cfcfcf;
     border-radius: 5px;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
-    border: 2px solid black;
 }
 
 
 .checkbox-label input:checked ~ .checkbox-custom {
-    background-color: #f7f7f7;
+    background-color: white;
     border-radius: 5px;
     -webkit-transform: rotate(0deg) scale(1);
     -ms-transform: rotate(0deg) scale(1);
     transform: rotate(0deg) scale(1);
     opacity:1;
-    border: 2px solid black;
 }
 
 
@@ -108,11 +119,6 @@ ul {
     content: "";
     left: 10px;
     top: 10px;
-    height: 0px;
-    width: 0px;
-    border-radius: 5px;
-    border: solid black;
-    border-width: 0 3px 3px 0;
     -webkit-transform: rotate(0deg) scale(0);
     -ms-transform: rotate(0deg) scale(0);
     transform: rotate(0deg) scale(0);
@@ -134,24 +140,23 @@ ul {
   top: 2px;
   width: 6px;
   height: 12px;
-  border: solid black;
-  border-width: 0 2px 2px 0;
   background-color: transparent;
   border-radius: 0;
+  border: solid black;
+  border-width: 0px 2px 2px 0px;
 }
 
 .removeBtn {
     cursor: pointer;
-    border: 2px solid black;
     border-radius: 5px;
     color: black;
-    background-color: #f7f7f7;
+    background-color: white;
     font-weight: bold;
+    border: none;
 }
 
 .removeBtn:hover {
     background-color: black;
-    border: 2px solid black;
     color: white;
 }
 
